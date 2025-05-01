@@ -1,75 +1,32 @@
-# Nuxt Minimal Starter
+# 💳 PayJS – The Payment Gateway for Developers
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 🎯 Purpose
 
-## Setup
+> "Making payment integration simple, fast, and accessible."
 
-Make sure to install dependencies:
+PayJS was built for developers who want to integrate payments **quickly** and **without complexity**:
 
-```bash
-# npm
-npm install
+- 📚 Clear and objective documentation
+- ⚡ Payment integration with simple requests
+- 📊 Dashboard with real-time API summaries
 
-# pnpm
-pnpm install
+## 🚀 Main Features
 
-# yarn
-yarn install
+- ✅ **Simple REST API** – Integrate with just a few lines of code
+- 💳 **Card processing** with a single request
+- 🔄 **Automatic webhooks** – Get notified for every transaction
+- 📈 **Intuitive dashboard** – Monitor transactions in real time
 
-# bun
-bun install
-```
+## 💰 Pricing Plans
 
-## Development Server
+| Plan        | Price             | Limit                   | Benefits                                                   |
+|-------------|------------------|--------------------------|-------------------------------------------------------------|
+| **Free**    | R$ 0.00           | 50 transactions/month     | Basic API dashboard                                         |
+| **Pro**     | R$ 19.99 lifetime | Unlimited transactions   | Full dashboard, webhooks, and early access to new features  |
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## 🌐 Languages
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [🇧🇷 Português](README.pt.md)
+- [🇺🇸 English (Current)](README.md)
