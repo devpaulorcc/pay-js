@@ -7,16 +7,11 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/registry/new-york-v4/ui/collapsible'
-import { Label } from '@/registry/new-york-v4/ui/label'
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarGroup,
-  SidebarGroupContent,
   SidebarGroupLabel,
-  SidebarHeader,
-  SidebarInput,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -26,41 +21,15 @@ import {
   SidebarRail,
 } from '@/registry/new-york-v4/ui/sidebar'
 import {
-  AudioWaveform,
   BookOpen,
   Bot,
   ChevronRightIcon,
-  Command,
-  GalleryVerticalEnd,
-  Search,
   Settings2,
   SquareTerminal,
 } from 'lucide-vue-next'
 
 // This is sample data.
 const data = {
-  user: {
-    name: 'shadcn',
-    email: 'm@example.com',
-    avatar: '/avatars/shadcn.jpg',
-  },
-  teams: [
-    {
-      name: 'Acme Inc',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup',
-    },
-    {
-      name: 'Evil Corp.',
-      logo: Command,
-      plan: 'Free',
-    },
-  ],
   navMain: [
     {
       title: 'Playground',
@@ -68,18 +37,7 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
       items: [
-        {
-          title: 'History',
-          url: '#',
-        },
-        {
-          title: 'Starred',
-          url: '#',
-        },
-        {
-          title: 'Settings',
-          url: '#',
-        },
+
       ],
     },
     {
@@ -87,18 +45,6 @@ const data = {
       url: '#',
       icon: Bot,
       items: [
-        {
-          title: 'Genesis',
-          url: '#',
-        },
-        {
-          title: 'Explorer',
-          url: '#',
-        },
-        {
-          title: 'Quantum',
-          url: '#',
-        },
       ],
     },
     {
@@ -107,19 +53,7 @@ const data = {
       icon: BookOpen,
       items: [
         {
-          title: 'Introduction',
-          url: '#',
-        },
-        {
-          title: 'Get Started',
-          url: '#',
-        },
-        {
-          title: 'Tutorials',
-          url: '#',
-        },
-        {
-          title: 'Changelog',
+          title: 'Introdução',
           url: '#',
         },
       ],
@@ -129,22 +63,6 @@ const data = {
       url: '#',
       icon: Settings2,
       items: [
-        {
-          title: 'General',
-          url: '#',
-        },
-        {
-          title: 'Team',
-          url: '#',
-        },
-        {
-          title: 'Billing',
-          url: '#',
-        },
-        {
-          title: 'Limits',
-          url: '#',
-        },
       ],
     },
   ],
@@ -163,27 +81,9 @@ function getComponentName(name: string) {
 
 <template>
   <Sidebar collapsible="icon">
-    <SidebarHeader>
-      <TeamSwitcher :teams="data.teams" />
-      <SidebarGroup class="py-0 group-data-[collapsible=icon]:hidden">
-        <SidebarGroupContent>
-          <form class="relative">
-            <Label for="search" class="sr-only">
-              Search
-            </Label>
-            <SidebarInput
-              id="search"
-              placeholder="Search the docs..."
-              class="pl-8"
-            />
-            <Search class="pointer-events-none absolute top-1/2 left-2 size-4 -translate-y-1/2 opacity-50 select-none" />
-          </form>
-        </SidebarGroupContent>
-      </SidebarGroup>
-    </SidebarHeader>
     <SidebarContent>
       <SidebarGroup>
-        <SidebarGroupLabel>Platform</SidebarGroupLabel>
+        <SidebarGroupLabel>Documentação de API</SidebarGroupLabel>
         <SidebarMenu>
           <Collapsible
             v-for="item in data.navMain"
@@ -215,22 +115,7 @@ function getComponentName(name: string) {
           </Collapsible>
         </SidebarMenu>
       </SidebarGroup>
-      <SidebarGroup class="group-data-[collapsible=icon]:hidden">
-        <SidebarGroupLabel>Components</SidebarGroupLabel>
-        <SidebarMenu>
-          <SidebarMenuItem v-for="item in data.components" :key="item.name">
-            <SidebarMenuButton as-child>
-              <NuxtLink :to="`/#${item.name}`">
-                <span>{{ getComponentName(item.name) }}</span>
-              </NuxtLink>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarGroup>
     </SidebarContent>
-    <SidebarFooter>
-      <NavUser :user="data.user" />
-    </SidebarFooter>
     <SidebarRail />
   </Sidebar>
 </template>
