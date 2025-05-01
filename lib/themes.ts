@@ -1,14 +1,14 @@
 export const THEMES = [
   {
-    name: 'Default',
+    name: 'Padrão',
     value: 'default',
   },
   {
-    name: 'Neutral',
+    name: 'Roxo',
     value: 'neutral',
   },
   {
-    name: 'Stone',
+    name: 'Dourado',
     value: 'stone',
   },
   {
@@ -16,7 +16,7 @@ export const THEMES = [
     value: 'zinc',
   },
   {
-    name: 'Gray',
+    name: 'Cinza',
     value: 'gray',
   },
   {
@@ -24,7 +24,7 @@ export const THEMES = [
     value: 'slate',
   },
   {
-    name: 'Scaled',
+    name: 'Pequeno',
     value: 'scaled',
   },
 ]
