@@ -35,11 +35,9 @@ const plans = [
     id: 'pro',
     name: 'Plano PRO',
     description: 'Escolha vitalícia com todos os recursos e vantagens da PayJS.',
-    price: '$20',
+    price: 'R$19,99',
   },
 ] as const
-
-
 </script>
 
 <template>
@@ -64,7 +62,6 @@ const plans = [
               <Label for="email">Email</Label>
               <Input id="email" placeholder="example@acme.com" />
             </div>
-            
           </div>
           <div class="flex flex-col gap-3 md:flex-row">
             <div class="flex flex-col gap-2">
@@ -75,9 +72,8 @@ const plans = [
               <Label for="cpassword">Confirmar Senha</Label>
               <Input id="cpassword" placeholder="XXXXXXXXXXXX" />
             </div>
-            
           </div>
-            
+
           <fieldset class="flex flex-col gap-3">
             <legend class="text-sm font-medium">
               Planos

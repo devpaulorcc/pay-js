@@ -8,9 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/registry/new-york-v4/ui/card'
+import { Checkbox } from '@/registry/new-york-v4/ui/checkbox'
 import { Input } from '@/registry/new-york-v4/ui/input'
 import { Label } from '@/registry/new-york-v4/ui/label'
-import { Checkbox } from '@/registry/new-york-v4/ui/checkbox'
 </script>
 
 <template>
@@ -46,9 +46,9 @@ import { Checkbox } from '@/registry/new-york-v4/ui/checkbox'
       </CardContent>
       <CardFooter class="flex justify-between">
         <NuxtLink to="/">
-            <Button variant="outline" size="sm">
-              Voltar
-            </Button>
+          <Button variant="outline" size="sm">
+            Voltar
+          </Button>
         </NuxtLink>
         <Button size="sm">
           Entrar
