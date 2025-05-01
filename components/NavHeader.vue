@@ -15,21 +15,21 @@ const { path } = useRoute()
       <NavigationMenuItem>
         <NavigationMenuLink as-child :data-active="path === '/'">
           <NuxtLink to="/">
-            Home
+            Inicío
           </NuxtLink>
         </NavigationMenuLink>
       </NavigationMenuItem>
-      <!-- <NavigationMenuItem>
-        <NavigationMenuLink as-child :data-active="path === '/charts'">
-          <NuxtLink to="/charts">
-            Charts
+      <NavigationMenuItem>
+        <NavigationMenuLink as-child :data-active="path === '/plans'">
+          <NuxtLink to="/plans">
+            Planos
           </NuxtLink>
         </NavigationMenuLink>
-      </NavigationMenuItem> -->
+      </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink as-child :data-active="path === '/forms'">
-          <NuxtLink to="/login">
-            Login
+        <NavigationMenuLink as-child :data-active="path === '/docs'">
+          <NuxtLink to="/docs/introduction">
+            Documentação
           </NuxtLink>
         </NavigationMenuLink>
       </NavigationMenuItem>

@@ -2,72 +2,106 @@
 </script>
 
 <template>
-  <div class="min-h-screen p-6 md:p-12 bg-gradient-to-b from-background to-muted/20">
-    <!-- Hero Section -->
-    <section class="max-w-4xl mx-auto text-center space-y-6 py-12">
-      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-        Simplifique seus pagamentos
-      </h1>
-      <p class="max-w-[42rem] mx-auto leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-        Integre pagamentos em qualquer aplicação com nossa API com uma documentação clara.
-      </p>
-      <div class="flex gap-4 justify-center">
-        <Button size="lg">Criar Conta Gratuita</Button>
-        <Button size="lg" variant="outline">Ver Documentação</Button>
+  <div class="w-full bg-background py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span
+          class="inline-block px-3 py-1 text-sm font-semibold text-primary bg-primary/10 rounded-full mb-4"
+        >
+          Bem-vindo(a)
+        </span>
+        <h2 class="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          Simplifique pagamentos com
+          <span class="text-primary">PayJS</span>
+        </h2>
+        <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+          Nossa plataforma facilita a integração de serviços de pagamento em sua aplicação.
+        </p>
       </div>
-    </section>
 
-    <!-- Features Grid -->
-    <section class="max-w-6xl mx-auto py-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <Card>
-        <CardHeader>
-          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-              <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-card text-card-foreground rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-primary/20">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-primary" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+              />
             </svg>
           </div>
-          <CardTitle>Integração Simplificada</CardTitle>
-          <CardDescription>API RESTful poderosa com SDKs prontos e documentação completa.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Button variant="link" class="px-0">Explorar API →</Button>
-        </CardContent>
-      </Card>
+          <h3 class="text-2xl font-bold mb-3">
+            Checkout Simplificado
+          </h3>
+          <p class="text-muted-foreground">
+            Implemente pagamentos em seu site ou app com nossa solução pronta para uso, sem complicações.
+          </p>
+        </div>
 
-      <Card>
-        <CardHeader>
-          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        <div class="bg-card text-card-foreground rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-primary/20">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-primary" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+              />
             </svg>
           </div>
-          <CardTitle>Segurança PCI Nível 1</CardTitle>
-          <CardDescription>Proteção de dados com criptografia de ponta a ponta e certificação máxima.</CardDescription>
-        </CardHeader>
-      </Card>
+          <h3 class="text-2xl font-bold mb-3">
+            Integração Rápida
+          </h3>
+          <p class="text-muted-foreground">
+            Nossa API simples e bem documentada permite que você comece a processar pagamentos em minutos.
+          </p>
+        </div>
 
-      <Card>
-        <CardHeader>
-          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-              <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"></path>
-              <path d="M3 12c0 2.4 4 6 9 6 3.8 0 7.2-2.8 8.7-5"></path>
-              <path d="M3 12h18"></path>
+        <div class="bg-card text-card-foreground rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-primary/20">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-primary" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+              />
             </svg>
           </div>
-          <CardTitle>Pagamentos Globais</CardTitle>
-          <CardDescription>Aceite múltiplas moedas e métodos de pagamento internacionais.</CardDescription>
-        </CardHeader>
-      </Card>
-    </section>
+          <h3 class="text-2xl font-bold mb-3">
+            Painel de Controle
+          </h3>
+          <p class="text-muted-foreground">
+            Acompanhe todas as transações, relatórios financeiros e métricas de conversão em tempo real.
+          </p>
+        </div>
+      </div>
 
-    <!-- CTA Section -->
-    <section class="max-w-4xl mx-auto py-12 text-center space-y-6">
-      <h2 class="text-3xl font-bold tracking-tight">Integre pagamentos em minutos</h2>
-      <p class="max-w-[42rem] mx-auto leading-normal text-muted-foreground">
-        Comece a processar transações com nossa API intuitiva e suporte especializado 24/7.
-      </p>
-    </section>
+      <div class="text-center mt-20">
+        <NuxtLink
+          to="#price"
+          class="inline-flex items-center px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-lg transition-colors shadow-lg hover:shadow-xl"
+        >
+          Começar Agora
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </NuxtLink>
+      </div>
+    </div>
   </div>
+  <PricesSection />
 </template>
