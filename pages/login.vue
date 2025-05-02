@@ -1,12 +1,3 @@
-<!-- <script setup lang="ts">
-</script>
-
-<template>
-  <div class="flex flex-1 items-center justify-center p-4">
-    <FormDemo />
-  </div>
-</template> -->
-
 <script setup lang="ts">
 definePageMeta({
   layout: false,
