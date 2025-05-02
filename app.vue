@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Toaster } from '@/registry/new-york-v4/ui/sonner'
-
 const activeTheme = useCookie<string>('active_theme', { readonly: true })
 const isScaled = computed(() => !!activeTheme.value?.endsWith('-scaled'))
 </script>
@@ -14,9 +12,8 @@ const isScaled = computed(() => !!activeTheme.value?.endsWith('-scaled'))
     ]"
   >
     <NuxtLayout>
+      <Notifications />
       <NuxtPage />
     </NuxtLayout>
-
-    <Toaster />
   </Body>
 </template>

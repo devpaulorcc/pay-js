@@ -25,4 +25,13 @@ export default defineNuxtConfig({
   routeRules: {
     '/**': { ssr: true },
   },
+  plugins: [
+    '~/plugins/notifications.client.js',
+  ],
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.NUXT_PUBLIC_API_URL,
+      keyPayment: process.env.NUXT_PUBLIC_KEY_PAYMENT,
+    },
+  },
 })
