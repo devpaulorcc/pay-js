@@ -4,28 +4,29 @@ export const THEMES = [
     value: 'default',
   },
   {
-    name: 'Roxo',
+    name: 'Roxo Suave',
     value: 'neutral',
   },
   {
-    name: 'Dourado',
+    name: 'Laranja Elegante',
     value: 'stone',
   },
   {
-    name: 'Zinc',
+    name: 'Urbano',
     value: 'zinc',
   },
   {
-    name: 'Cinza',
+    name: 'Clássico',
     value: 'gray',
   },
   {
-    name: 'Slate',
+    name: 'Profundo',
     value: 'slate',
   },
   {
-    name: 'Pequeno',
+    name: 'Compacto',
     value: 'scaled',
   },
 ]
+
 export type Theme = (typeof THEMES)[number]
