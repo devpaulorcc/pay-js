@@ -24,12 +24,20 @@ const defaultOpen = useCookie<boolean>('sidebar_state')
           <div class="ml-auto flex items-center gap-2">
             <ThemeSelector />
             <ModeSwitcher />
-            <NuxtLink to="/login">
-              Entrar
-            </NuxtLink>
-            <NuxtLink to="/register">
-              Cadastrar
-            </NuxtLink>
+            <div class="ml-auto flex items-center gap-2">
+              <NuxtLink
+                to="/login"
+                class="inline-flex items-center px-2 py-1 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg transition-colors"
+              >
+                Entrar
+              </NuxtLink>
+              <NuxtLink
+                to="/register"
+                class="inline-flex items-center px-2 py-1 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg transition-colors"
+              >
+                Cadastrar
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </header>

@@ -89,7 +89,7 @@
 
       <div class="text-center mt-20">
         <NuxtLink
-          to="#price"
+          to="/register"
           class="inline-flex items-center px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-lg transition-colors shadow-lg hover:shadow-xl"
         >
           Começar Agora

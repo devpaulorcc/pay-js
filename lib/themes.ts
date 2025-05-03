@@ -4,20 +4,20 @@ export const THEMES = [
     value: 'default',
   },
   {
-    name: 'Roxo Suave',
+    name: 'Clássico',
+    value: 'gray',
+  },
+  {
+    name: 'Roxo',
     value: 'neutral',
   },
   {
-    name: 'Laranja Elegante',
+    name: 'Laranja',
     value: 'stone',
   },
   {
     name: 'Urbano',
     value: 'zinc',
-  },
-  {
-    name: 'Clássico',
-    value: 'gray',
   },
   {
     name: 'Profundo',

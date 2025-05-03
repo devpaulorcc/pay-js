@@ -13,7 +13,7 @@ function handleSliderChange(e: Event) {
 
 <template>
   <div class="min-h-screen bg-background">
-    <section class="py-20 text-center">
+    <section class="m-10 text-center">
       <div class="container mx-auto px-4">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
           Escolha o plano perfeito para você
@@ -24,7 +24,7 @@ function handleSliderChange(e: Event) {
       </div>
     </section>
 
-    <section class="py-12 bg-gradient-to-b from-background to-muted/10">
+    <section class="bg-gradient-to-b from-background to-muted/10">
       <div class="container mx-auto px-4 max-w-3xl">
         <div class="bg-card p-8 rounded-xl border border-primary/20 shadow-lg">
           <div class="mb-8">
@@ -53,13 +53,15 @@ function handleSliderChange(e: Event) {
                 Recomendamos o Plano Vitalício!
               </h3>
               <p class="mb-4">
-                Para valores acima de R$ 20/mês, o plano vitalício sai mais em conta com apenas R$ 9,99 uma única vez.
+                Seu fluxo mensal é acima de R$ 20,00? Escolha o plano vitalício para aproveitar 100% dos recursos da PayJS.
               </p>
-              <button
-                class="bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-2 px-6 rounded-lg transition"
-              >
-                Comprar Vitalício
-              </button>
+              <NuxtLink to="/register">
+                <button
+                  class="bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-2 px-6 rounded-lg transition"
+                >
+                  Comprar Vitalício
+                </button>
+              </NuxtLink>
             </div>
           </div>
         </div>

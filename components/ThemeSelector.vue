@@ -13,7 +13,7 @@ const { activeTheme } = useThemeConfig()
 
 <template>
   <Select v-model="activeTheme">
-    <SelectTrigger size="sm" class="w-32">
+    <SelectTrigger size="sm" class="w-24">
       <SelectValue placeholder="Select a theme">
         {{ THEMES.find(theme => theme.value === activeTheme)?.name }}
       </SelectValue>
