@@ -33,7 +33,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <!-- Menu para desktop -->
   <NavigationMenu v-if="!isMobile">
     <NavigationMenuList class="gap-2 *:data-[slot=navigation-menu-item]:h-7 **:data-[slot=navigation-menu-link]:py-1 **:data-[slot=navigation-menu-link]:font-medium">
       <NavigationMenuItem>
@@ -60,7 +59,6 @@ onUnmounted(() => {
     </NavigationMenuList>
   </NavigationMenu>
 
-  <!-- Menu hambúrguer para mobile -->
   <div v-else class="flex justify-end">
     <DropdownMenu>
       <DropdownMenuTrigger as-child>
@@ -85,7 +83,7 @@ onUnmounted(() => {
         </button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent class="w-56 mr-4 mt-2 bg-background">
+      <DropdownMenuContent class="w-56 mt-2 bg-background">
         <DropdownMenuItem>
           <NuxtLink
             to="/"
