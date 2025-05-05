@@ -112,7 +112,7 @@ import { Activity, ArrowUpRight, BarChart2, Bell, Cpu, CreditCard, DollarSign, F
             <CardDescription>Gerencie sua integração</CardDescription>
           </CardHeader>
           <CardContent class="grid gap-3">
-            <NuxtLink to="/tickets">
+            <NuxtLink to="/">
               <Button variant="outline" class="h-16 justify-start w-full cursor-pointer">
                 <Ticket class="mr-2 h-4 w-4" />
                 <div class="text-left">
@@ -126,7 +126,7 @@ import { Activity, ArrowUpRight, BarChart2, Bell, Cpu, CreditCard, DollarSign, F
               </Button>
             </NuxtLink>
 
-            <NuxtLink to="/api-requests">
+            <NuxtLink to="/">
               <Button variant="outline" class="h-16 justify-start w-full cursor-pointer">
                 <Cpu class="mr-2 h-4 w-4" />
                 <div class="text-left">
@@ -140,7 +140,7 @@ import { Activity, ArrowUpRight, BarChart2, Bell, Cpu, CreditCard, DollarSign, F
               </Button>
             </NuxtLink>
 
-            <NuxtLink to="/webhooks">
+            <NuxtLink to="/">
               <Button variant="outline" class="h-16 justify-start w-full cursor-pointer">
                 <Bell class="mr-2 h-4 w-4" />
                 <div class="text-left">
@@ -154,7 +154,7 @@ import { Activity, ArrowUpRight, BarChart2, Bell, Cpu, CreditCard, DollarSign, F
               </Button>
             </NuxtLink>
 
-            <NuxtLink to="/settings">
+            <NuxtLink to="/">
               <Button variant="outline" class="h-16 justify-start w-full cursor-pointer">
                 <Settings class="mr-2 h-4 w-4" />
                 <div class="text-left">
@@ -168,7 +168,7 @@ import { Activity, ArrowUpRight, BarChart2, Bell, Cpu, CreditCard, DollarSign, F
               </Button>
             </NuxtLink>
 
-            <NuxtLink to="/documentation">
+            <NuxtLink to="/">
               <Button variant="outline" class="h-16 justify-start w-full cursor-pointer">
                 <FileText class="mr-2 h-4 w-4" />
                 <div class="text-left">
@@ -182,7 +182,7 @@ import { Activity, ArrowUpRight, BarChart2, Bell, Cpu, CreditCard, DollarSign, F
               </Button>
             </NuxtLink>
 
-            <NuxtLink to="/api-keys">
+            <NuxtLink to="/">
               <Button variant="outline" class="h-16 justify-start w-full cursor-pointer">
                 <Key class="mr-2 h-4 w-4" />
                 <div class="text-left">
