@@ -1,4 +1,5 @@
 {
-  "buildCommand": "nuxt generate",
-  "outputDirectory": "dist"
+  "buildCommand": "nuxi build",
+  "outputDirectory": ".output",
+  "framework": "nuxt"
 }
