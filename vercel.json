@@ -1,4 +1,0 @@
-{
-  "buildCommand": "nuxi build",
-  "outputDirectory": ".output"
-}
