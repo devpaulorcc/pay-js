@@ -19,9 +19,6 @@ export default defineNuxtConfig({
       'vue-sonner',
     ],
   },
-  nitro: {
-    preset: 'vercel',
-  },
   routeRules: {
     '/**': { ssr: true },
   },
