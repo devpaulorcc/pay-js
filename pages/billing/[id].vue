@@ -38,17 +38,18 @@ function mountBrick() {
                         },
                     }
 
-                    const responsePayment: any = await $fetch(`${configVariables.public.apiUrl}/payment/charge`, {
+                    const paymentProcessed = await $fetch('/api/payment/process', {
                         method: 'POST',
-                        body: JSON.stringify(payload),
+                        body: {
+                            payload,
+                            userId: userId.value
+                        }
                     })
-                    if (responsePayment?.status === 'approved') {
 
-                        const updatePlan: any = await $fetch(`${configVariables.public.apiUrl}/user/plan/${userId.value}`, {
-                        method: 'POST',
-                    })
+                    if(paymentProcessed.success === true) {
                         navigateTo('/login')
                     }
+                    
                 }
                 catch (error) {
                     console.error('Erro ao processar:', error)
@@ -61,8 +62,8 @@ function mountBrick() {
     })
 }
 onMounted(async () => {
-    const planChoiced = await $fetch(`${configVariables.public.apiUrl}/payment/plans`, {
-        method: 'POST',
+    const planChoiced = await $fetch('/api/payment/plans', {
+        method: 'GET',
     })
 
     const route = useRoute()
